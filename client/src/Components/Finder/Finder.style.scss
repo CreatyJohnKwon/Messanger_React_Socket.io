@@ -1,0 +1,54 @@
+.finder {
+  background: #f1f5f8;
+  padding: 15px;
+  box-sizing: border-box;
+
+  .finder_contents {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.05);
+
+    .finder_image {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+    .finder_input {
+      width: 100%;
+      .form_input {
+        display: block;
+        width: 100%;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .finder {
+    padding: 15px;
+    box-sizing: border-box;
+    .finder_contents {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      .finder_image {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+      }
+      .finder_input {
+        .form_input {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

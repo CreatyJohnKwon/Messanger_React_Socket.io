@@ -1,0 +1,54 @@
+.modal_top {
+  position: relative;
+  width: 100%;
+  margin-bottom: 23px;
+  text-align: center;
+
+  .modal_title,
+  .modal_subTitle {
+    line-height: 1;
+  }
+  .modal_title {
+    font-size: 16px;
+    color: #1f2024;
+    font-weight: 900;
+  }
+  .modal_subTitle {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #71727a;
+    font-weight: 400;
+  }
+  .button_close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("../../../Assets/Images/closeModal.svg") center center
+      no-repeat;
+    background-size: 15px 15px;
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal_top {
+    width: 100%;
+    margin-bottom: 23px;
+    text-align: center;
+    .modal_title {
+      font-size: 16px;
+    }
+    .modal_subTitle {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #71727a;
+      font-weight: 400;
+    }
+    .button_close {
+      background-size: 15px 15px;
+      width: 15px;
+      height: 15px;
+    }
+  }
+}

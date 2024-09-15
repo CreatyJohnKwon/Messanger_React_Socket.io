@@ -1,0 +1,23 @@
+.searchInput {
+  width: calc(100% - 83px);
+
+  .form_input {
+    display: block;
+    width: 100%;
+    padding: 0 7px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 768px) {
+  .searchInput {
+    width: calc(100% - 83px);
+    .form_input {
+      padding: 0 7px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+  }
+}

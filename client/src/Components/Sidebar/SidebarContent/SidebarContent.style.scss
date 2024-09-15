@@ -1,0 +1,62 @@
+.list_chatMenu {
+  margin-top: 20px;
+  .item_sideBarMenu {
+    color: #4a4a4a;
+    font-size: 32px;
+    .button_sideBarMenu {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+      padding: 13px 0 13px 3px;
+      box-sizing: border-box;
+      .image_sideBarIcon {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+      }
+      .text_sideBar {
+        color: #4a4a4a;
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+    &.item_members {
+      .link_addMember {
+        padding-bottom: 13px;
+      }
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #d8e8ed;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .list_chatMenu {
+    .item_sideBarMenu {
+      .button_sideBarMenu {
+        padding: 13px 0 13px 3px;
+        box-sizing: border-box;
+        .image_sideBarIcon {
+          width: 24px;
+          height: 24px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 431px) {
+  .list_chatMenu {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 415px) {
+  .list_chatMenu {
+    margin-top: 0;
+  }
+}

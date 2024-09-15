@@ -1,0 +1,33 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.525.0",
+    "@aws-sdk/credential-providers": "^3.525.0",
+    "@aws-sdk/lib-storage": "^3.525.1",
+    "@aws-sdk/token-providers": "^3.525.0",
+    "aws-sdk": "^2.1569.0",
+    "axios": "^1.7.7",
+    "chalk": "^5.3.0",
+    "choco": "^0.2.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "http-proxy-middleware": "^2.0.6",
+    "mariadb": "^3.2.3",
+    "mkcert": "^3.2.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.0.2",
+    "react": "^18.2.0",
+    "react-alert": "^7.0.3",
+    "react-compose-onmount": "^1.2.0",
+    "react-cookie": "^7.0.2",
+    "socket.io": "^4.7.4",
+    "zustand": "^4.5.0"
+  },
+  "scripts": {
+    "start": "nodemon index.js"
+  }
+}

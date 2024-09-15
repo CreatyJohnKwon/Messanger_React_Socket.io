@@ -1,0 +1,11 @@
+.section_util {
+  .list_util {
+    display: flex;
+    align-items: center;
+    .item_util {
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+}

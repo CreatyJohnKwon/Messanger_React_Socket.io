@@ -1,0 +1,22 @@
+.module_chat {
+  border: 1px solid red;
+  width: 750px;
+  margin: 0 auto;
+  border-radius: 28px;
+  overflow: hidden;
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  -ms-border-radius: 28px;
+  -o-border-radius: 28px;
+}
+
+@media (max-width: 768px) {
+  .module_chat {
+    width: 375px;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+  }
+}

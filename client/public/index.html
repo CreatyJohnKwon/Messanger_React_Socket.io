@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="두톡 (Do Talk)" />
+    <meta property="og:title" content="두톡 (Do Talk)" />
+    <meta
+      property="og:description"
+      content="우리 회사 업무 메신저 두톡(Do Talk)"
+    />
+    <title>우리 회사 업무 메신저 두톡(Do Talk)</title>
+  </head>
+  <style>
+    .offscreen {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      border: 0;
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+    }
+  </style>
+  <body>
+    <noscript
+      >이 사이트의 기능을 모두 활용하기 위해서는, 웹 브라우저 메뉴에서 모든
+      사이트에서 자바스크립트 실행을 허용(권장) 해주세요</noscript
+    >
+    <div id="root"></div>
+    <div id="modal_chatTitle">
+      <span class="offscreen">대화방 타이틀 변경 모달</span>
+    </div>
+    <div id="modal_room">
+      <span class="offscreen">대화방 생성 모달</span>
+    </div>
+    <div id="overlay">
+      <span class="offscreen">대화방 메뉴 오버레이</span>
+    </div>
+    <div id="toast">
+      <span class="offscreen">대화 메세지 배너</span>
+    </div>
+  </body>
+</html>

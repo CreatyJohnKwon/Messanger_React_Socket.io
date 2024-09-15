@@ -1,0 +1,50 @@
+.item_savedFiles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-sizing: border-box;
+
+  .item_savedFile {
+    display: flex;
+    align-items: center;
+    .item_FileType {
+      width: 20px;
+      height: 20px;
+      margin-right: 16px;
+    }
+    .text_downFile {
+      display: flex;
+      align-items: center;
+      color: #1f2024;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+  .button_download {
+    width: 16px;
+    height: 17px;
+    background: url("../../../Assets/Images/download.svg") no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .item_savedFiles {
+    padding: 10px 20px;
+    box-sizing: border-box;
+    .item_savedFile {
+      .item_FileType {
+        width: 20px;
+        height: 20px;
+      }
+      .text_downFile {
+        font-size: 16px;
+      }
+    }
+    .button_download {
+      width: 16px;
+      height: 17px;
+    }
+  }
+}

@@ -1,0 +1,115 @@
+.navigation_menu {
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff;
+  width: 430px;
+  height: 100%;
+  padding: 0 15px 40px 15px;
+  box-sizing: border-box;
+  transition: 850ms;
+
+  .navigation_items {
+    width: 100%;
+    .navigation_toggle {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: #ffffff;
+      width: 100%;
+      height: 80px;
+    }
+    .navigation_text {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 8px 0px 8px 16px;
+      box-sizing: border-box;
+      list-style: none;
+      height: 60px;
+      a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #151414;
+        font-size: 18px;
+        width: 95%;
+        height: 100%;
+        padding: 0 16px;
+        box-sizing: border-box;
+        border-radius: 4px;
+        span {
+          margin-left: 16px;
+        }
+        &:hover {
+          background-color: #000000;
+          color: #fff;
+        }
+      }
+    }
+  }
+  &.active {
+    z-index: 5;
+    right: calc(50% - 300px);
+    transition: 450ms;
+  }
+  .button_chatOut {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 6px 0;
+    box-sizing: border-box;
+    border-radius: 34px;
+    border: 1px solid #006ffd;
+    -webkit-border-radius: 34px;
+    -moz-border-radius: 34px;
+    -ms-border-radius: 34px;
+    -o-border-radius: 34px;
+
+    .image_wrap {
+      width: 24px;
+    }
+    .text_chatOut {
+      color: #006ffd;
+      font-size: 16px;
+      margin-left: 10px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation_menu {
+    width: 275px;
+    padding: 0 15px 40px 15px;
+    box-sizing: border-box;
+    .button_chatOut {
+      width: 100%;
+      padding: 6px 0;
+      box-sizing: border-box;
+      margin-top: 13px;
+      .image_wrap {
+        width: 24px;
+      }
+      .text_chatOut {
+        font-size: 16px;
+      }
+    }
+    &.active {
+      right: -1px;
+    }
+  }
+}
+
+@media (max-width: 361px) {
+  .navigation_menu {
+    .button_chatOut {
+      margin-top: 12px;
+    }
+  }
+}

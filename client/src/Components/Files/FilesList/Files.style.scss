@@ -1,0 +1,44 @@
+.list_files {
+  background: #fff;
+  height: calc(100vh - 65px);
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  .item_files {
+    .text_savedDate {
+      background: #f1f5f8;
+      padding: 8px 0;
+      box-sizing: border-box;
+      color: #1f2024;
+      font-size: 12px;
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+
+  .item_vacant {
+    padding: 16px 0;
+    box-sizing: border-box;
+    color: #1f2024;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .list_files {
+    .item_files {
+      .text_savedDate {
+        padding: 8px 0;
+        box-sizing: border-box;
+        font-size: 12px;
+      }
+    }
+  }
+}

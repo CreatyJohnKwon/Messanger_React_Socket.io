@@ -1,0 +1,41 @@
+#modal_chatTitle,
+#modal_room {
+  .modal {
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 16px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+  }
+  .overlay {
+    z-index: 7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media (max-width: 768px) {
+  #modal_chatTitle {
+    .modal {
+      width: 300px;
+      padding: 16px;
+      box-sizing: border-box;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.chat_bottom {
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  background: #cfe7e9;
+  width: 600px;
+  padding: 16px;
+  box-sizing: border-box;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+  .chat_bottom {
+    width: 100%;
+    padding: 16px 15px;
+    box-sizing: border-box;
+  }
+}
